@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Generate Dart client",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "./Library/dart_openai-generator-cli.sh"
+        },
+        {
+            "name": "Generate Python client",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "./Library/python_openai-generator-cli.sh"
+        }
+    ]
+}
