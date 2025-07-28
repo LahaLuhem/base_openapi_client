@@ -22,6 +22,7 @@ fi
 api_version_tag="3"
 
 # Cleanup the repo from any previous runs
+cd ..
 rm -rf .openapi-generator/
 rm -rf doc/
 rm -rf lib/
@@ -34,7 +35,6 @@ rm -f pubspec.lock
 
 
 # Execute openapi-generator generator
-cd ..
 openapi-generator generate                                                                                              \
         -i https://petstore3.swagger.io/api/v${api_version_tag}/openapi.json                                            \
         -g dart-dio                                                                                                     \
